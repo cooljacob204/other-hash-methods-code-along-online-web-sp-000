@@ -10,9 +10,9 @@ require 'pry'
 
 def get_the_min(groceries)
   items= []
-  groceries.each { |i, key| 
+  groceries.each { |key, i| 
   binding.pry
-  items << i[key] }
+  items << i }
   items.sort
   items.first
 end
